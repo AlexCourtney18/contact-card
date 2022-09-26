@@ -22,7 +22,7 @@ export const getDb = async () => {
     console.log('GET from the database');
 
     // create a connection to the IndexedDB database and the version we want to use.
-    const contactDb = await openDB('conact_db', 1);
+    const contactDb = await openDB('contact_db', 1);
 
     // create a new transaction and specify the store and data priveliges.
     const tx = contactDb.transaction('contacts', 'readonly');
